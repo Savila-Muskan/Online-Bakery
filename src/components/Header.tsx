@@ -58,29 +58,30 @@ export const Header: React.FC = () => {
     <header className="sticky top-0 z-40 bg-white border-b border-[#F4E6EB] shadow-xs">
       
       {/* 1. Top Ribbon matching the image (Pink bar) */}
-      <div className="bg-[#E84E7B] text-white text-xs font-normal py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="bg-[#E84E7B] text-white text-xs font-normal py-1.5 px-3 sm:px-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
           
           {/* Left Announcement */}
-          <div className="flex items-center gap-1.5">
-            <span className="inline-block">📍 Delivering happiness to your doorsteps!</span>
+          <div className="flex items-center gap-1.5 min-w-0">
+            <span className="truncate text-[11px] sm:text-xs">📍 Delivering happiness to your doorsteps!</span>
           </div>
 
           {/* Right Contact Info & Socials */}
-          <div className="flex items-center gap-4 text-xs">
+          <div className="flex items-center gap-3 sm:gap-4 text-xs shrink-0">
             <a 
-              href="tel:+923493438060" 
-              className="flex items-center gap-1 hover:text-[#FFE3EB] transition-colors"
+              href="tel:+923094895688" 
+              className="flex items-center gap-1 hover:text-[#FFE3EB] transition-colors whitespace-nowrap shrink-0 font-medium"
+              title="Call Bakery Hotline"
             >
-              <Phone className="w-3 h-3" />
-              <span>+92 349 3438060</span>
+              <Phone className="w-3 h-3 shrink-0" />
+              <span className="whitespace-nowrap tracking-tight sm:tracking-normal">+92 309 4895688</span>
             </a>
             <span className="opacity-50 hidden sm:inline">|</span>
             <a 
               href="mailto:savilamuskan26@gmail.com" 
-              className="hidden sm:flex items-center gap-1 hover:text-[#FFE3EB] transition-colors"
+              className="hidden sm:flex items-center gap-1 hover:text-[#FFE3EB] transition-colors whitespace-nowrap"
             >
-              <Mail className="w-3 h-3" />
+              <Mail className="w-3 h-3 shrink-0" />
               <span>savilamuskan26@gmail.com</span>
             </a>
             <div className="hidden md:flex items-center gap-2 pl-2">

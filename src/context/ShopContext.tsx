@@ -393,7 +393,7 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
       status: 'Order Confirmed',
       riderDetails: {
         name: 'Chilled Delivery Fleet Rider',
-        phone: '+92 349 3438060',
+        phone: '+92 309 4895688',
         vehicle: 'Refrigerated Pâtisserie Unit'
       }
     };

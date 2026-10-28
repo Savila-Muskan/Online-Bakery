@@ -401,7 +401,7 @@ export const AdminDashboard: React.FC = () => {
 
     y += 18;
     ctx.font = '11px sans-serif';
-    ctx.fillText('UAN Hotline: +92 349 3438060 • savilamuskan26@gmail.com • Pakistan', width / 2, y);
+    ctx.fillText('UAN Hotline: +92 309 4895688 • savilamuskan26@gmail.com • Pakistan', width / 2, y);
 
     y += 22;
     // Official Dispatch Slip Badge
@@ -530,7 +530,7 @@ export const AdminDashboard: React.FC = () => {
 
     ctx.fillStyle = '#7A6D72';
     ctx.font = '11px sans-serif';
-    ctx.fillText(`Phone: ${order.riderDetails?.phone || '+92 349 3438060'}   •   Vehicle: ${order.riderDetails?.vehicle || 'Refrigerated Cake Van'}`, 46, y + 33);
+    ctx.fillText(`Phone: ${order.riderDetails?.phone || '+92 309 4895688'}   •   Vehicle: ${order.riderDetails?.vehicle || 'Refrigerated Cake Van'}`, 46, y + 33);
 
     y += 54;
 
@@ -904,18 +904,18 @@ ${order.items.map((it, i) => `${i + 1}. ${it.quantity}x ${it.product.name} [${it
           {/* Admin Direct Hotline */}
           <div className="p-3 bg-[#FFF5F7] border border-[#FAD4DB] rounded-2xl text-center space-y-2">
             <p className="text-[11px] font-bold text-[#FF4B72] uppercase tracking-wider">Direct Admin & Support Helpline</p>
-            <div className="flex items-center justify-center gap-3 text-xs font-bold text-[#241F1E]">
-              <a href="tel:+923493438060" className="hover:text-[#FF4B72] flex items-center gap-1 transition-colors">
-                <Phone className="w-3.5 h-3.5 text-[#FF4B72]" />
-                +92 349 3438060
+            <div className="flex items-center justify-center gap-3 text-xs font-bold text-[#241F1E] flex-wrap">
+              <a href="tel:+923094895688" className="hover:text-[#FF4B72] flex items-center gap-1 transition-colors whitespace-nowrap">
+                <Phone className="w-3.5 h-3.5 text-[#FF4B72] shrink-0" />
+                <span className="whitespace-nowrap">+92 309 4895688</span>
               </a>
               <span className="text-[#FAD4DB]">•</span>
-              <a href="https://wa.me/923493438060" target="_blank" rel="noopener noreferrer" className="text-[#128C7E] hover:underline flex items-center gap-1">
-                <MessageCircle className="w-3.5 h-3.5" />
+              <a href="https://wa.me/923094895688" target="_blank" rel="noopener noreferrer" className="text-[#128C7E] hover:underline flex items-center gap-1 whitespace-nowrap">
+                <MessageCircle className="w-3.5 h-3.5 shrink-0" />
                 WhatsApp
               </a>
             </div>
-            <p className="text-[10px] text-[#7A6D72]">
+            <p className="text-[10px] text-[#7A6D72] truncate">
               <a href="mailto:savilamuskan26@gmail.com" className="hover:underline hover:text-[#FF4B72]">
                 savilamuskan26@gmail.com
               </a>
@@ -987,35 +987,35 @@ ${order.items.map((it, i) => `${i + 1}. ${it.quantity}x ${it.product.name} [${it
         <div className="bg-[#FFF0F3] border-t border-b border-[#FAD4DB] px-4 py-2 text-stone-800">
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-xs">
             <div className="flex items-center flex-wrap gap-2">
-              <span className="font-bold text-[#FF4B72] uppercase tracking-wider text-[10px] bg-white px-2 py-0.5 rounded-full border border-[#FAD4DB]">
+              <span className="font-bold text-[#FF4B72] uppercase tracking-wider text-[10px] bg-white px-2 py-0.5 rounded-full border border-[#FAD4DB] shrink-0">
                 Admin & Hotline
               </span>
-              <span className="text-[#241F1E] font-bold text-xs flex items-center gap-1">
-                <Phone className="w-3 h-3 text-[#FF4B72]" />
-                +92 349 3438060
-              </span>
+              <a href="tel:+923094895688" className="text-[#241F1E] hover:text-[#FF4B72] font-bold text-xs flex items-center gap-1 whitespace-nowrap shrink-0 transition-colors">
+                <Phone className="w-3 h-3 text-[#FF4B72] shrink-0" />
+                <span className="whitespace-nowrap">+92 309 4895688</span>
+              </a>
               <span className="text-[#FAD4DB] hidden sm:inline">•</span>
-              <span className="text-[#52454A] font-medium text-xs flex items-center gap-1">
-                <Mail className="w-3 h-3 text-[#FF4B72]" />
-                savilamuskan26@gmail.com
+              <span className="text-[#52454A] font-medium text-xs hidden sm:flex items-center gap-1 truncate">
+                <Mail className="w-3 h-3 text-[#FF4B72] shrink-0" />
+                <span className="truncate">savilamuskan26@gmail.com</span>
               </span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 shrink-0">
               <a
-                href="tel:+923493438060"
-                className="px-2.5 py-1 bg-white hover:bg-[#FFE3E9] text-[#FF4B72] border border-[#FAD4DB] rounded-lg font-bold text-[11px] flex items-center gap-1 transition-colors shadow-xs"
+                href="tel:+923094895688"
+                className="px-2.5 py-1 bg-white hover:bg-[#FFE3E9] text-[#FF4B72] border border-[#FAD4DB] rounded-lg font-bold text-[11px] flex items-center gap-1 transition-colors shadow-xs whitespace-nowrap"
               >
-                <Phone className="w-3 h-3" />
-                Call Direct
+                <Phone className="w-3 h-3 shrink-0" />
+                <span>Call Direct</span>
               </a>
               <a
-                href="https://wa.me/923493438060?text=Hello%20CakeShop%20Admin,%20I%20have%20an%20urgent%20inquiry%20regarding%20orders."
+                href="https://wa.me/923094895688?text=Hello%20CakeShop%20Admin,%20I%20have%20an%20urgent%20inquiry%20regarding%20orders."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-2.5 py-1 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-lg font-bold text-[11px] flex items-center gap-1 transition-colors shadow-xs"
+                className="px-2.5 py-1 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-lg font-bold text-[11px] flex items-center gap-1 transition-colors shadow-xs whitespace-nowrap"
               >
-                <MessageCircle className="w-3 h-3" />
-                WhatsApp
+                <MessageCircle className="w-3 h-3 shrink-0" />
+                <span>WhatsApp</span>
               </a>
               <a
                 href="mailto:savilamuskan26@gmail.com"
@@ -1113,30 +1113,30 @@ ${order.items.map((it, i) => `${i + 1}. ${it.quantity}x ${it.product.name} [${it
                 </span>
               </div>
               <div className="text-xs text-[#7A6D72] flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
-                <span>Phone / Hotline: <strong className="text-[#241F1E]">+92 349 3438060</strong></span>
+                <span>Phone / Hotline: <strong className="text-[#241F1E] whitespace-nowrap">+92 309 4895688</strong></span>
                 <span className="text-[#FAD4DB]">•</span>
                 <span>Email: <strong className="text-[#241F1E]">savilamuskan26@gmail.com</strong></span>
                 <span className="text-[#FAD4DB] hidden sm:inline">•</span>
-                <span className="hidden sm:inline">JazzCash / Easypaisa: <strong className="text-[#241F1E]">0349-3438060 (Savila Muskan)</strong></span>
+                <span className="hidden sm:inline">JazzCash / Easypaisa: <strong className="text-[#241F1E] whitespace-nowrap">0309-4895688 (Savila Muskan)</strong></span>
               </div>
             </div>
           </div>
 
           <div className="flex items-center flex-wrap gap-2 shrink-0">
             <a
-              href="tel:+923493438060"
-              className="px-3 py-2 bg-[#FF4B72] hover:bg-[#E03A60] text-white rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors shadow-xs"
+              href="tel:+923094895688"
+              className="px-3 py-2 bg-[#FF4B72] hover:bg-[#E03A60] text-white rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors shadow-xs whitespace-nowrap"
             >
-              <Phone className="w-3.5 h-3.5" />
-              <span>Call +92 349 3438060</span>
+              <Phone className="w-3.5 h-3.5 shrink-0" />
+              <span className="whitespace-nowrap font-mono">Call +92 309 4895688</span>
             </a>
             <a
-              href="https://wa.me/923493438060"
+              href="https://wa.me/923094895688"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-2 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors shadow-xs"
+              className="px-3 py-2 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors shadow-xs whitespace-nowrap"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <MessageCircle className="w-3.5 h-3.5 shrink-0" />
               <span>WhatsApp</span>
             </a>
             <a
@@ -1430,7 +1430,7 @@ ${order.items.map((it, i) => `${i + 1}. ${it.quantity}x ${it.product.name} [${it
                               setSelectedOrderForRider(order);
                               setRiderForm({
                                 name: order.riderDetails?.name || 'Muhammad Rizwan',
-                                phone: order.riderDetails?.phone || '+92 349 3438060',
+                                phone: order.riderDetails?.phone || '+92 309 4895688',
                                 vehicle: order.riderDetails?.vehicle || 'Refrigerated Cake Van (LED-4192)'
                               });
                             }}
@@ -2315,7 +2315,7 @@ ${order.items.map((it, i) => `${i + 1}. ${it.quantity}x ${it.product.name} [${it
                     <h2 className="font-serif text-2xl font-bold tracking-tight text-[#241F1E]">CakeShop</h2>
                   </div>
                   <p className="text-xs text-[#7A6D72] italic font-medium">Artisanal Bakery & Fresh Cake Confectionery</p>
-                  <p className="text-[11px] text-[#7A6D72]">UAN: +92 349 3438060 • savilamuskan26@gmail.com • Pakistan</p>
+                  <p className="text-[11px] text-[#7A6D72]">UAN: +92 309 4895688 • savilamuskan26@gmail.com • Pakistan</p>
                   <div className="pt-2">
                     <span className="inline-block bg-[#241F1E] text-white text-[10px] font-bold uppercase px-3 py-1 rounded-md tracking-wider">
                       Official Kitchen & Delivery Dispatch Slip
@@ -2399,7 +2399,7 @@ ${order.items.map((it, i) => `${i + 1}. ${it.quantity}x ${it.product.name} [${it
                       {selectedOrderForPrint.riderDetails?.name || 'In-House Cake Courier'}
                     </p>
                     <p className="text-[11px] text-[#7A6D72]">
-                      Phone: {selectedOrderForPrint.riderDetails?.phone || '+92 349 3438060'} • Vehicle: {selectedOrderForPrint.riderDetails?.vehicle || 'Refrigerated Cake Van'}
+                      Phone: {selectedOrderForPrint.riderDetails?.phone || '+92 309 4895688'} • Vehicle: {selectedOrderForPrint.riderDetails?.vehicle || 'Refrigerated Cake Van'}
                     </p>
                   </div>
                   <span className="text-[10px] font-bold uppercase bg-white border border-[#FAD4DB] text-[#FF4B72] px-2.5 py-1 rounded-lg">
@@ -2574,7 +2574,7 @@ ${order.items.map((it, i) => `${i + 1}. ${it.quantity}x ${it.product.name} [${it
                   required
                   value={riderForm.phone}
                   onChange={(e) => setRiderForm({ ...riderForm, phone: e.target.value })}
-                  placeholder="+92 349 3438060"
+                  placeholder="+92 309 4895688"
                   className="w-full p-2.5 bg-[#FFF9FA] border border-[#FAD4DB] rounded-xl focus:outline-none focus:ring-1 focus:ring-[#FF4B72]"
                 />
               </div>

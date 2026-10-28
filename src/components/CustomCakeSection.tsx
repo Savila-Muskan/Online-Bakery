@@ -87,12 +87,12 @@ ${messageOnCake.trim() ? `✍️ *Text on Cake:* "${messageOnCake.trim()}"\n` : 
 
     // Direct Baker WhatsApp dispatch
     const waText = buildCustomCakeWhatsAppMessage(newReq.id);
-    window.open(`https://wa.me/923493438060?text=${encodeURIComponent(waText)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/923094895688?text=${encodeURIComponent(waText)}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleOpenWhatsAppConcierge = () => {
     const waText = buildCustomCakeWhatsAppMessage(submittedRequestId || 'NEW');
-    window.open(`https://wa.me/923493438060?text=${encodeURIComponent(waText)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/923094895688?text=${encodeURIComponent(waText)}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -131,12 +131,12 @@ ${messageOnCake.trim() ? `✍️ *Text on Cake:* "${messageOnCake.trim()}"\n` : 
                 </button>
 
                 <a
-                  href="https://wa.me/923493438060?text=Hello%20CakeShop!%20I%20want%20to%20consult%20about%20a%20custom%20cake."
+                  href="https://wa.me/923094895688?text=Hello%20CakeShop!%20I%20want%20to%20consult%20about%20a%20custom%20cake."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-3 text-[#E84E7B] hover:text-[#D93C6B] text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5"
+                  className="px-5 py-3 text-[#E84E7B] hover:text-[#D93C6B] text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5 whitespace-nowrap"
                 >
-                  <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                  <MessageCircle className="w-4 h-4 text-[#25D366] shrink-0" />
                   <span>Chat on WhatsApp</span>
                 </a>
               </div>
@@ -247,7 +247,7 @@ ${messageOnCake.trim() ? `✍️ *Text on Cake:* "${messageOnCake.trim()}"\n` : 
                       <input
                         type="tel"
                         required
-                        placeholder="+92 349 3438060"
+                        placeholder="+92 309 4895688"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         className="w-full text-xs p-2.5 bg-[#FFF9FA] border border-[#E0D0D5] rounded-lg focus:outline-none focus:border-[#E84E7B]"

@@ -21,7 +21,7 @@ export const ContactSection: React.FC = () => {
     e.preventDefault();
     if (!name.trim() || !phone.trim()) return;
 
-    // Compose formatted WhatsApp message for the Baker (+92 349 3438060)
+    // Compose formatted WhatsApp message for the Baker (+92 309 4895688)
     const formattedWaText = 
 `🎂 *NEW MESSAGE FOR BAKER (CAKESHOP PK)* 🎂
 ━━━━━━━━━━━━━━━━━━━━━━
@@ -36,7 +36,7 @@ ${message.trim() || 'No specific note provided'}
 ⏰ *Sent:* ${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
 💬 *Source:* CakeShop Website Contact Form`;
 
-    const whatsappUrl = `https://wa.me/923493438060?text=${encodeURIComponent(formattedWaText)}`;
+    const whatsappUrl = `https://wa.me/923094895688?text=${encodeURIComponent(formattedWaText)}`;
 
     setLastMessageDetails({
       name: name.trim(),
@@ -78,30 +78,30 @@ ${message.trim() || 'No specific note provided'}
             {/* Quick Action Buttons: Direct Call & WhatsApp */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <a
-                href="tel:+923493438060"
-                className="p-4 rounded-2xl bg-[#FFF9FA] border border-[#FAD4DB] hover:border-[#FF4B72] transition-all flex items-center gap-3.5 group"
+                href="tel:+923094895688"
+                className="p-3.5 sm:p-4 rounded-2xl bg-[#FFF9FA] border border-[#FAD4DB] hover:border-[#FF4B72] transition-all flex items-center gap-3 sm:gap-3.5 group min-w-0"
               >
                 <div className="w-10 h-10 rounded-full bg-[#FFF0F3] text-[#FF4B72] flex items-center justify-center shrink-0">
                   <Phone className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] text-[#7A716C] uppercase tracking-wider">Direct Hotline</p>
-                  <p className="text-xs font-bold text-[#241F1E] group-hover:text-[#FF4B72]">+92 349 3438060</p>
+                  <p className="text-xs sm:text-sm font-bold text-[#241F1E] group-hover:text-[#FF4B72] whitespace-nowrap tracking-tight sm:tracking-normal">+92 309 4895688</p>
                 </div>
               </a>
 
               <a
-                href="https://wa.me/923493438060?text=Hello%20CakeShop,%20I%20have%20an%20inquiry%20regarding%20a%20cake%20order."
+                href="https://wa.me/923094895688?text=Hello%20CakeShop,%20I%20have%20an%20inquiry%20regarding%20a%20cake%20order."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-2xl bg-[#25D366]/5 border border-[#25D366]/20 hover:border-[#25D366] transition-all flex items-center gap-3.5 group"
+                className="p-3.5 sm:p-4 rounded-2xl bg-[#25D366]/5 border border-[#25D366]/20 hover:border-[#25D366] transition-all flex items-center gap-3 sm:gap-3.5 group min-w-0"
               >
                 <div className="w-10 h-10 rounded-full bg-[#25D366]/15 text-[#128C7E] flex items-center justify-center shrink-0">
                   <MessageCircle className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] text-[#7A716C] uppercase tracking-wider">WhatsApp Chat</p>
-                  <p className="text-xs font-bold text-[#128C7E]">+92 349 3438060</p>
+                  <p className="text-xs sm:text-sm font-bold text-[#128C7E] whitespace-nowrap tracking-tight sm:tracking-normal">+92 309 4895688</p>
                 </div>
               </a>
             </div>
@@ -188,7 +188,7 @@ ${message.trim() || 'No specific note provided'}
                       Message Sent to Baker's WhatsApp!
                     </h4>
                     <p className="text-xs text-[#6B635E] mt-1 max-w-md mx-auto">
-                      All your contact details and message have been formatted and directed to Baker <strong>+92 349 3438060</strong>.
+                      All your contact details and message have been formatted and directed to Baker <strong className="whitespace-nowrap text-[#241F1E]">+92 309 4895688</strong>.
                     </p>
                   </div>
 
@@ -204,7 +204,7 @@ ${message.trim() || 'No specific note provided'}
                       </div>
                       <div>
                         <span className="text-[#7A6D72] block text-[10px]">Phone Number:</span>
-                        <strong className="text-[#FF4B72]">{lastMessageDetails.phone}</strong>
+                        <strong className="text-[#FF4B72] whitespace-nowrap">{lastMessageDetails.phone}</strong>
                       </div>
                       <div>
                         <span className="text-[#7A6D72] block text-[10px]">Email Address:</span>
@@ -229,10 +229,10 @@ ${message.trim() || 'No specific note provided'}
                       href={lastMessageDetails.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full sm:w-auto px-6 py-3 bg-[#25D366] hover:bg-[#20BA5A] text-white text-xs font-bold tracking-wider uppercase rounded-xl transition-all shadow-md shadow-[#25D366]/20 flex items-center justify-center gap-2"
+                      className="w-full sm:w-auto px-5 sm:px-6 py-3 bg-[#25D366] hover:bg-[#20BA5A] text-white text-xs font-bold tracking-wider uppercase rounded-xl transition-all shadow-md shadow-[#25D366]/20 flex items-center justify-center gap-2 whitespace-nowrap"
                     >
-                      <MessageCircle className="w-4 h-4" />
-                      <span>Open WhatsApp Chat (+92 349 3438060)</span>
+                      <MessageCircle className="w-4 h-4 shrink-0" />
+                      <span>Open WhatsApp Chat (<span className="whitespace-nowrap font-mono">+92 309 4895688</span>)</span>
                     </a>
                     
                     <button
@@ -275,7 +275,7 @@ ${message.trim() || 'No specific note provided'}
                         required
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        placeholder="+92 349 3438060"
+                        placeholder="+92 309 4895688"
                         className="w-full text-xs p-3 bg-white border border-[#FAD4DB] rounded-xl focus:outline-none focus:ring-1 focus:ring-[#FF4B72]"
                       />
                     </div>

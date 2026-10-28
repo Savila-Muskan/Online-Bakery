@@ -47,7 +47,7 @@ ${itemsList}
 ${confirmedOrder.customer.orderNotes ? `\n📝 *Customer Order Note:* "${confirmedOrder.customer.orderNotes}"\n` : ''}━━━━━━━━━━━━━━━━━━━━━━
 Please confirm order reception and kitchen dispatch!`;
 
-    window.open(`https://wa.me/923493438060?text=${encodeURIComponent(formattedOrderWa)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/923094895688?text=${encodeURIComponent(formattedOrderWa)}`, '_blank', 'noopener,noreferrer');
   };
 
   return (

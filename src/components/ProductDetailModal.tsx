@@ -133,7 +133,7 @@ export const ProductDetailModal: React.FC = () => {
 ━━━━━━━━━━━━━━━━━━━━━━
 Please confirm kitchen availability and baking slot!`
     );
-    window.open(`https://wa.me/923493438060?text=${text}`, '_blank');
+    window.open(`https://wa.me/923094895688?text=${text}`, '_blank');
   };
 
   return (
